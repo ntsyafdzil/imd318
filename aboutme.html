@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 80%; 
+}
+
+table.center th, table.center td {
+  font-weight: bold; 
+  font-family: 'Arial', sans-serif; 
+  padding: 10px; 
+  font-size: 18px; 
+}
+
+table.center th {
+  background-color: black; 
+}
+
+table.center {
+  border: 2px solid black; 
+  border-collapse: collapse;
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body  {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding:0;
+  background-size: cover;
+  background-image: url("image/page.jpg");
+}
+
+.header {
+   background-image: url("image/sunset1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: pink;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: yellow;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: pink;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #fe027b;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.header {
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+}
+
+.content {
+  padding: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+h2 {
+  color: olive; /* Change the color to your desired color */
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: pink;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  max-width: 660px; /* Adjusted for video width + padding */
+}
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  footer {
+    text-align: center;
+    background-color: pink;
+    padding: 64px 0;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+</style>
+</head>
+<body>
+  
+  
+<div class="header">
+  <h1 class="w3-xxxlarge"><b>My Personal Website</b></h1>
+ <h6>Welcome to <span class="w3-tag"> Natt's World</span></h6>
+  </header>
+
+</div>
+
+<div class="navbar" id="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Me 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutme.html">Biodata</a>
+      <a href="socialmedia.html">Social Media</a>
+    </div>
+  </div>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+   <a href="friends.html">Friends</a>
+  <a href="moment.html">Photography</a>
+     <a href="business.html">Business</a>
+
+<audio controls style="float: right; padding: 14px 16px;">
+       <source src="audio/Sabrina Carpenter - Nonsense.mp3" type="audio/mp3">
+       Your browser does not support the audio element.
+     </audio>
+</div>
+
+
+<div class="w3-justify">
+    <div class="video-container">
+      <video controls>
+  <source src="video/myself.mp4" type="video/mp4">
+
+                </div>
+
+<h2 style="text-align:center">About Me</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="image/myself5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="image/myself2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="image/myself3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="image/myself4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="image/myself5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="image/myself2.jpg" style="width:100%">
+    </div>
+
+<div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="image/myself2.jpg" style="width:100%">
+    </div>
+
+<div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="image/myself2.jpg" style="width:100%">
+    </div>
+
+      
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="image/myself5.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/myself2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+<div class="column">
+      <img class="demo cursor" src="image/myself2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+<div class="column">
+      <img class="demo cursor" src="image/myself2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/myself3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/myself4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<marquee behavior="scroll" direction="left" style="font-size: 40px; color: white;">BIODATA</marquee>
+
+
+<table class="center">
+
+  <tr>
+    <td>NAME</td>
+    <td>Nur Fatin Natasya Binti Mat Fadzil</td>
+  </tr>
+  <tr>
+    <td>AGE</td>
+    <td>21 Years</td>
+  </tr>
+  <tr>
+    <td>NICKNAME</td>
+    <td>Nat</td>
+  </tr>
+  <tr>
+    <td>DATE OF BIRTH</td>
+    <td>22 December 2003</td>
+  </tr>
+  <tr>
+    <td>BIRTH PLACE </td>
+    <td>Hospital Seberang Jaya, Pulau Pinang</td>
+  </tr>
+  <tr>
+    <td>HOMETOWN</td>
+    <td>Manjung,Perak</td>
+  </tr>
+  <tr>
+    <td>ORIGIN</td>
+    <td>Permatang Pauh, Pulau Pinang</td>
+  </tr>
+  <tr>
+    <td>HOBBY</td>
+    <td>Photography</td>
+  </tr>
+  <tr>
+    <td>FAVOURITE COLOUR</td>
+    <td>Olive</td>
+  </tr>
+  <tr>
+    <td>FAVOURITE FOOD</td>
+    <td>Pasta</td>
+  </tr>
+</table>
+ <br><br>
+
+<footer>
+  <a href="aboutme.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<p>© 2024 Natasya. All rights reserved </p>
+</footer>
+
+</footer>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
+    
+    
+
+
+
+
+
+

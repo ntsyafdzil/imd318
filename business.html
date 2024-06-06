@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body  {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding:0;
+  background-size: cover;
+  background-image: url("image/page.jpg");
+}
+
+.header {
+   background-image: url("image/sunset1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: pink;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: yellow;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: pink;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #fe027b;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.header {
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+}
+
+.content {
+  padding: 16px;
+}
+/*Banner Section*/
+.banner {
+  background-color: #ff779e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  margin: 0;
+  text-align: center;s
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+ background-color: pink
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.container {
+  padding: 32px;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  width: 800px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.content {
+  padding: 32px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: auto;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h6 {
+  font-size: 1em;
+  margin-bottom: 1em;
+  color: #666;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+.button {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.25em;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #444;
+}
+footer {
+    text-align: center;
+    background-color: pink;
+    padding: 64px 0;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 class="w3-xxxlarge"><b>My Personal Website</b></h1>
+ <h6>Welcome to <span class="w3-tag"> Natt's World</span></h6>
+  </header>
+</div>
+
+<div class="navbar" id="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Me 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutme.html">Biodata</a>
+      <a href="socialmedia.html">Social Media</a>
+    </div>
+  </div>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+   <a href="friends.html">Friends</a>
+  <a href="moment.html">Photography</a>
+     <a href="business.html">Business</a>
+
+<audio controls style="float: right; padding: 14px 16px;">
+       <source src="audio/Sabrina Carpenter - Nonsense.mp3" type="audio/mp3">
+     </audio>
+</div>
+
+<div class='banner'>
+    <div class='container'>
+      <h2>Natt Store</h2>
+      <p>Thank You For Your Support.</p>
+    </div>
+  </div>
+<br><br>
+<div class='container'>
+    <h1 id='expertise'>The Product.</h1>
+<br><br>
+
+<div class="card-container">
+<div class="card">
+  <img src="image/shirt.jpg" alt="Shirt" style="width:100%">
+  <h1>Shirt</h1>
+  <p class="price">RM35.00-RM90.00</p>
+</div>
+
+<div class="card">
+  <img src="image/scarves.jpg" alt="scarf" style="width:100%">
+  <h1>Scarves</h1>
+  <p class="price">RM10.00-RM35.00</p>
+</div>
+
+<div class="card">
+  <img src="image/bag.jpg" alt="bag" style="width:100%">
+  <h1>Tote Bag</h1>
+  <p class="price">RM15.00</p>
+</div>
+
+  <div class="container center">  
+    
+    <img src="image/store.jpg"  class="image">
+    <div class="content">
+      <h4><b>About Us</b></h4>
+      <p>
+        Welcome to Natt Store! I have been running this business since my school days until now. I am very interested in entrepreneurship and successfully owning my own business. Among the products sold are hijabs, bags and clothes
+      </p>
+
+
+  <h4><b>Contact Us</b></h4>
+  <h6><i>Your Glow Is Here!</i></h6>
+      <p>
+       Do follow us on Instagram and Telegram for more information and designs.
+      </p>
+ <p><a href="https://linktr.ee/storenatt" class="button">SHOP NOW</a></p>
+    </div>
+  </div>
+
+</body>
+</html> 

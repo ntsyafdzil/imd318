@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body  {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding:0;
+  background-size: cover;
+  background-image: url("image/page.jpg");
+}
+
+.header {
+   background-image: url("image/sunset1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: pink;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: yellow;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: pink;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #fe027b;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.header {
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+}
+
+.content {
+  padding: 32px;
+}
+.w3-image {
+    width: 100%;
+    height: auto;
+}
+.w3-display-left {
+    padding: 16px;
+}
+.w3-text-white {
+    color: white !important;
+}
+.w3-card {
+    background-color: white;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.w3-row-padding {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.w3-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}        .scroll-container {
+            background-color: pink;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+        .scroll-container img {
+            padding: 10px;
+        }
+  footer {
+    text-align: center;
+    background-color: pink;
+    padding: 64px 0;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="w3-xxxlarge"><b>My Personal Website</b></h1>
+        <h6>Welcome to <span class="w3-tag">Natt's World</span></h6>
+    </div>
+
+  <div class="navbar" id="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Me 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutme.html">Biodata</a>
+      <a href="socialmedia.html">Social Media</a>
+    </div>
+  </div>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+   <a href="friends.html">Friends</a>
+  <a href="moment.html">Photography</a>
+     <a href="business.html">Business</a>
+
+<audio controls style="float: right; padding: 14px 16px;">
+       <source src="audio/Sabrina Carpenter - Nonsense.mp3" type="audio/mp3">
+     </audio>
+
+    </div>
+
+    <div class="w3-container" style="padding:128px 16px" id="team">
+        <h3 class="w3-center">MY FAMILY</h3>
+        <div class="w3-row-padding " style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="image/dad.jpg" alt="dad" style="width:100%">
+                    <div class="w3-container">
+                        <h3>DADDY</h3>
+                        <p>This is my father, his name is Mat Fadzil bin Abdul Latih or his nickname is Chemat. My father is 54 years old and comes from Tanjung Piandang, Perak. My father is strict but he is also loving. In his free time he would go fishing with my mother.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="image/mom.jpg" alt="ifa" style="width:100%">
+                    <div class="w3-container">
+                        <h3>MOMMY</h3>
+                        <p>This is my mother, her name is Iafalah binti Mat Junus. Her name is often said to be unique. My mother is now a housewife, before this she worked as an accountant in a company. This year she turns 50 years old. My mother is also from Perak in Manjung. My parents have the same interest which is fishing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="image/qal.jpg" alt="qal" style="width:100%">
+                    <div class="w3-container">
+                        <h3>SISTER</h3>
+                        <p>This is my youngest sister, she is 14 years old, her name is Nur Faqihah Qalesya Binti Mat Fadzil. She went to school at SMK Pauh Jaya. She is also a very hardworking person, she often helps my mother in doing the housework. Playing with makeup is her favorite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Image Gallery With Family</h2>
+        <div class="scroll-container">
+            <img src="image/raya.jpg" width="600" height="400">
+            <img src="image/family.jpg" width="600" height="400">
+            <img src="image/trio.jpg" width="600" height="400">
+            <img src="image/family1.jpg" width="600" height="400">
+        </div>
+    </div>
+
+<footer>
+  <a href="family.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<p>© 2024 Natasya. All rights reserved </p>
+</footer>
+
+
+</body>
+</html>

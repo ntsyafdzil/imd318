@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Friends</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url("image/download.jpg");
+  }
+
+  header, .header {
+    background-image: url("image/sunset1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    color: black;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: pink;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: yellow;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: pink;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #fe027b;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+
+  .scroll-container img {
+    padding: 10px;
+  }
+
+  video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .content {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  footer {
+    text-align: center;
+    background-color: pink;
+    padding: 64px 0;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+<header class="header">
+  <h1 class="w3-xxxlarge"><b>My Personal Website</b></h1>
+  <h6>Welcome to <span class="w3-tag">Natt's World</span></h6>
+</header>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Me 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutme.html">Biodata</a>
+      <a href="socialmedia.html">Social Media</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+  <a href="friends.html">Friends</a>
+  <a href="moment.html">Photography</a>
+  <a href="business.html">Business</a>
+  <audio controls style="float: right; padding: 14px 16px;">
+    <source src="audio/Sabrina Carpenter - Nonsense.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+
+<div class="scroll-container">
+  <img src="image/friends1.jpg"  width="600" height="400">
+  <img src="image/friends2.jpg" width="600" height="400">
+  <img src="image/friends5.jpg" width="600" height="400">
+  <img src="image/friends6.jpg"  width="600" height="400">
+</div>
+
+<video autoplay muted loop id="myVideo">
+  <source src="video/friend.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>My Circle</h1>
+  <p>They are not only friends but like family, I am very grateful to have good friends like them. Started just as classmates but in the first to third semester different classes and the fourth semester started our very close friendship. May the friendship now last forever. Love you all</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<footer>
+  <a href="friends.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<p>© 2024 Natasya. All rights reserved </p>
+</footer>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</body>
+</html>
